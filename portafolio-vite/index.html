@@ -1,200 +1,151 @@
 <!doctype html>
-<html lang="en">
+<html lang="es" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script type="module" src="/src/main.jsx"></script>
-  <title>Portafolio</title>
+  <title>Glainn Pinto - Portafolio</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-white-900 text-white font-sans antialiased">  
-  <div class="max-w-screen-xl mx-auto lg:grid lg:grid-cols-12 lg:gap-x-16">
-    <header class="lg:col-span-4 lg:sticky lg:top-0 lg:h-screen">
-      <nav class="flex flex-col h-full text-white">
-        <div id="me">
-          <div class="flex items-center justify-center h-24 pt-20">
-            <h1 class="text-[#EFC3E6]">Glainn Pinto</h1>
-          </div>
-          <div class="card">
-            <div>
-              <iframe src="" frameborder="0"></iframe>
-            </div>
-            <div>
-              <p>Futura Creadora de Experiencias Web</p>
-            </div>
-            <div>
-              <p>Enfocada en aprender y aplicar las mejores prácticas del desarrollo frontend para transformar ideas en
-                experiencias web interactivas y funcionales.</p>
-            </div>
-          </div>
-        </div>
-        <ul>
-          <li>
-            <button>About</button>
-          </li>
-          <li>
-            <button>Experience</button>
-          </li>
-          <li>
-            <button>Skills</button>
-          </li>
-          <li>
-            <button>Projects</button>
-          </li>
-        </ul>
-      </nav>
-      <!-- social media -->
+<body class="font-sans antialiased">
+  <div class="max-w-screen-xl mx-auto lg:grid lg:grid-cols-12 lg:gap-x-20 px-6 sm:px-8 lg:px-12">
+
+    <header class="lg:col-span-4 lg:sticky lg:top-0 lg:h-screen flex flex-col justify-between py-12 lg:py-24">
       <div>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
+        <h1 class="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-[#000000]">
+          <a href="/">Glainn Pinto</a>
+        </h1>
+        <h2 class="mt-3 font-sans text-lg font-semibold tracking-wide text-[#273263]">
+          Creadora de Experiencias Web
+        </h2>
+        <p class="mt-4 max-w-xs leading-normal text-white">
+          Enfocada en aprender y aplicar las mejores prácticas del desarrollo frontend para transformar ideas en experiencias web interactivas y funcionales.
+        </p>
+        <nav class="hidden lg:block mt-16" aria-label="In-page jump links">
+          <ul class="w-max">
+            <li><a class="group flex items-center py-3" href="#sobre-mi">
+                <span class="nav-indicator mr-4 h-px w-8 bg-white transition-all group-hover:w-16 group-hover:bg-[#856dbd]"></span>
+                <span class="nav-text text-xs font-bold uppercase tracking-widest text-white group-hover:text-[#856dbd]">Sobre Mí</span>
+            </a></li>
+            <li><a class="group flex items-center py-3" href="#habilidades">
+                <span class="nav-indicator mr-4 h-px w-8 bg-white transition-all group-hover:w-16 group-hover:bg-[#856dbd]"></span>
+                <span class="nav-text text-xs font-bold uppercase tracking-widest text-white group-hover:text-[#856dbd]">Habilidades</span>
+            </a></li>
+            <li><a class="group flex items-center py-3" href="#proyectos">
+                <span class="nav-indicator mr-4 h-px w-8 bg-white transition-all group-hover:w-16 group-hover:bg-[#856dbd]"></span>
+                <span class="nav-text text-xs font-bold uppercase tracking-widest text-white group-hover:text-[#856dbd]">Proyectos</span>
+            </a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="flex items-center mt-8 space-x-6">
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-6 h-6 text-[#273263] hover:text-[#F0A6CA] transition-colors"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"></path></svg>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-[#273263] hover:text-[#F0A6CA] transition-colors"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93-.8 0-1.22.52-1.42 1.01-.07.17-.1.42-.1.67V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.28 1.01 3.28 3.96z"></path></svg>
+        </a>
       </div>
     </header>
 
-    <main class="lg:col-span-8 pt-12">
-      <section class="main one flex flex-col gap-8">
-        <div class="flex flex-col gap-4">
-          <h3 class="text-2xl">¿Cómo empezaste? ¿Qué te atrajo de la programación?</h3>
-          <p>Mi viaje en el mundo de la tecnología comenzó en 2017 cuando entre a la universidad, pero mi pasion en ello
-            desperto en 2025 con una simple curiosidad por cómo funcionaban las páginas web. Desde que escribí mi primer
-            'Hola Mundo', quedé fascinada por el poder de transformar líneas de código en algo tangible e interactivo</p>
+    <main class="lg:col-span-8 pt-24">
+    <section id="sobre-mi" class="mb-16 md:mb-24 scroll-mt-24" aria-label="Sobre mí">
+        <h2 class="text-xl font-bold tracking-tight text-[#EFC3E6] sm:text-2xl mb-8 lg:hidden">
+            Sobre Mí
+        </h2>
+        <div class="flex flex-col gap-12">
+            <div>
+                <h3 class="font-medium text-lg text-[#5e6aa1] mb-2">
+                    ¿Cómo empezaste? ¿Qué te atrajo de la programación?
+                </h3>
+                <p class="leading-relaxed">
+                    Mi viaje en el mundo de la tecnología comenzó en 2017 cuando entre a la universidad, pero mi pasion en ello desperto en 2025 con una simple curiosidad por cómo funcionaban las páginas web. Desde que escribí mi primer 'Hola Mundo', quedé fascinada por el poder de transformar líneas de código en algo tangible e interactivo.
+                </p>
+            </div>
+            <div>
+                <h3 class="font-medium text-lg text-[#5e6aa1] mb-2">
+                    ¿En qué te estás enfocando ahora mismo? ¿Qué tecnologías te interesan más?
+                </h3>
+                <p class="leading-relaxed">
+                    Actualmente, estoy enfocada en consolidar mis habilidades en el ecosistema de Python, especializándome en React y herramientas modernas como Vite y Tailwind CSS. Disfruto el reto de resolver problemas y aprender constantemente nuevas tecnologías para mejorar la calidad de mis proyectos.
+                </p>
+            </div>
+            <div>
+                <h3 class="font-medium text-lg text-[#5e6aa1] mb-2">
+                    ¿Qué buscas?
+                </h3>
+                <p class="leading-relaxed">
+                    Busco una oportunidad para unirme a un equipo donde pueda seguir aprendiendo de desarrolladores con más experiencia, contribuir con mi pasión y crecer profesionalmente.
+                </p>
+            </div>
+
         </div>
-        <div class="flex flex-col gap-4">
-          <h3 class="text-2xl">¿En qué te estás enfocando ahora mismo? ¿Qué tecnologías te interesan más?</h3>
-          <p>Actualmente, estoy enfocada en consolidar mis habilidades en el ecosistema de Python, especializándome en
-            React y herramientas modernas como Vite y Tailwind CSS. Disfruto el reto de resolver problemas y aprender
-            constantemente nuevas tecnologías para mejorar la calidad de mis proyectos.</p>
+    </section>
+
+      <section id="habilidades" class="mb-16 md:mb-24 scroll-mt-24">
+        <h3 class="font-serif text-2xl font-bold tracking-tight text-[#5e6aa1] sm:text-3xl mb-8">Habilidades</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-6">
+          <div>
+            <div class="flex justify-between mb-1"><span class="font-sans text-base font-semibold text-[#5C5470]">HTML</span></div>
+            <div class="w-full bg-[#5e6aa1]/40 rounded-full h-2.5"><div class="bg-[#273263] h-2.5 rounded-full" style="width: 65%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-1"><span class="font-sans text-base font-semibold text-[#5C5470]">CSS & Tailwind</span></div>
+            <div class="w-full bg-[#5e6aa1]/40 rounded-full h-2.5"><div class="bg-[#273263] h-2.5 rounded-full" style="width: 60%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-1"><span class="font-sans text-base font-semibold text-[#5C5470]">Python</span></div>
+            <div class="w-full bg-[#5e6aa1]/40 rounded-full h-2.5"><div class="bg-[#273263] h-2.5 rounded-full" style="width: 45%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-1"><span class="font-sans text-base font-semibold text-[#5C5470]">Jinja2</span></div>
+            <div class="w-full bg-[#5e6aa1]/40 rounded-full h-2.5"><div class="bg-[#273263] h-2.5 rounded-full" style="width: 40%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-1"><span class="font-sans text-base font-semibold text-[#5C5470]">HTMX</span></div>
+            <div class="w-full bg-[#5e6aa1]/40 rounded-full h-2.5"><div class="bg-[#273263] h-2.5 rounded-full" style="width: 40%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-1"><span class="font-sans text-base font-semibold text-[#5C5470]">SQL</span></div>
+            <div class="w-full bg-[#5e6aa1]/40 rounded-full h-2.5"><div class="bg-[#273263] h-2.5 rounded-full" style="width: 10%"></div></div>
+          </div>
         </div>
-        <div class="flex flex-col gap-4">
-          <h3 class="text-2xl">¿Qué buscas?</h3>
-          <p>Busco una oportunidad para unirme a un equipo donde pueda seguir aprendiendo de desarrolladores con más
-            experiencia, contribuir con mi pasión y crecer profesionalmente.</p>
-        </div>
       </section>
 
-      <section class="main two">
-        <h3>Experiencia</h3>
-        <a href="#">
-          <div>
-            2023 - PRESENTE
-          </div>
-          <div>
-            <h4>Estudiante Autodidacta · Formación Frontend</h4>
-            <p>Desarrollo continuo de habilidades y proyectos personales para dominar las tecnologías del desarrollo web
-              moderno. Enfocado en construir una base sólida para una carrera en el sector tecnológico.</p>
-            <ul>
-              <li>
-                <div>HTML5</div>
-              </li>
-              <li>
-                <div>CSS3 & Tailwind</div>
-              </li>
-              <li>
-                <div>MySQL</div>
-              </li>
-              <li>
-                <div>Python</div>
-              </li>
-            </ul>
-          </div>
-        </a>
+      <section id="proyectos" class="scroll-mt-24">
+        <h3 class="font-serif text-2xl font-bold tracking-tight text-[#5e6aa1] sm:text-3xl mb-12">Proyectos</h3>
+        <ul>
+          <li class="mb-12">
+            <div class="group relative grid sm:grid-cols-8 gap-4 transition-all">
+              <div class="absolute -inset-4 sm:-inset-6 z-0 hidden rounded-md sm:block transition-all motion-reduce:transition-none lg:group-hover:bg-[#B8BEDD]/20"></div>
+              <div class="sm:col-span-2 z-10 hidden sm:block">
+                <img src="https://placehold.co/600x400/9C89B8/F0E6EF?text=Proyecto" alt="Captura de proyecto" class="rounded border-2 border-transparent">
+              </div>
+              <div class="sm:col-span-6 z-10">
+                <h4 class="font-sans font-semibold text-[#5C5470]">
+                  <a href="#" class="hover:text-[#F0A6CA] transition-colors">Portafolio Personal v1</a>
+                </h4>
+                <p class="mt-2 text-sm leading-normal text-gray-600">Mi carta de presentación digital. Una página web responsiva construida para mostrar mis habilidades y proyectos. Desplegada con Vercel para asegurar disponibilidad y rapidez.</p>
+                <ul class="mt-2 flex flex-wrap" aria-label="Tecnologías utilizadas">
+                  <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-[#9C89B8]/20 px-3 py-1 text-xs font-semibold leading-5 text-[#9C89B8]">Vite</div></li>
+                  <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-[#9C89B8]/20 px-3 py-1 text-xs font-semibold leading-5 text-[#9C89B8]">Tailwind CSS</div></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
       </section>
 
-      <section class="main three">
-          <h3>Habilidades</h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
-              <div>
-                  <div class="flex justify-between mb-1">
-                      <span class="text-base font-medium text-teal-300">HTML</span>
-                  </div>
-                  <div class="w-full bg-slate-700 rounded-full h-2.5">
-                      <div class="bg-teal-500 h-2.5 rounded-full" style="width: 65%"></div>
-                  </div>
-              </div>
-              <div>
-                  <div class="flex justify-between mb-1">
-                      <span class="text-base font-medium text-teal-300">CSS & Tailwind</span>
-                  </div>
-                  <div class="w-full bg-slate-700 rounded-full h-2.5">
-                      <div class="bg-teal-500 h-2.5 rounded-full" style="width: 60%"></div>
-                  </div>
-              </div>
-              <div>
-                  <div class="flex justify-between mb-1">
-                      <span class="text-base font-medium text-teal-300">Python</span>
-                  </div>
-                  <div class="w-full bg-slate-700 rounded-full h-2.5">
-                      <div class="bg-teal-500 h-2.5 rounded-full" style="width: 45%"></div>
-                  </div>
-              </div>
-              <div>
-                  <div class="flex justify-between mb-1">
-                      <span class="text-base font-medium text-teal-300">Jinja2</span>
-                  </div>
-                  <div class="w-full bg-slate-700 rounded-full h-2.5">
-                      <div class="bg-teal-500 h-2.5 rounded-full" style="width: 40%"></div>
-                  </div>
-              </div>
-              <div>
-                  <div class="flex justify-between mb-1">
-                      <span class="text-base font-medium text-teal-300">HTMX</span>
-                  </div>
-                  <div class="w-full bg-slate-700 rounded-full h-2.5">
-                      <div class="bg-teal-500 h-2.5 rounded-full" style="width: 40%"></div>
-                  </div>
-              </div>
-              <div>
-                  <div class="flex justify-between mb-1">
-                      <span class="text-base font-medium text-teal-300">SQL</span>
-                  </div>
-                  <div class="w-full bg-slate-700 rounded-full h-2.5">
-                      <div class="bg-teal-500 h-2.5 rounded-full" style="width: 10%"></div>
-                  </div>
-              </div>
-            
-          </div>
-      </section>
-
-      <section class="main four">
-        <h3>Proyectos</h3>
-        <a href="#" target="_blank">
-          <div>
-            <!-- img -->
-          </div>
-          <div>
-            <h4>
-              Portafolio Personal v1
-            </h4>
-            <p>
-              Mi carta de presentación digital. Una página web responsiva construida para mostrar mis habilidades y
-              proyectos. Desplegada con Vercel/Netlify para asegurar disponibilidad y rapidez.
-            </p>
-            <ul>
-              <li>
-                <div>Vite</div>
-              </li>
-              <li>
-                <div>Tailwind CSS</div>
-              </li>
-            </ul>
-          </div>
-        </a>
-      </section>
-
-      <footer>
-      <div>
-        <p>© 2025 Glainn</p>
-        <p>Todos los derechos reservados.</p>
-      </div>
-      <div>
-        <a href="#">Política de privacidad</a>
-        <a href="#">Términos de servicio</a>
-      </div>
+      <footer class="text-center font-sans text-sm text-[#5e6aa1] py-12">
+        <p>Glainn Pinto. Construido con Tailwind CSS y desplegado con Vercel.</p>
       </footer>
     </main>
   </div>
 </body>
-
 </html>
